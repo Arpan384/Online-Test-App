@@ -1,0 +1,150 @@
+body {
+    background-image:url(../../css/bg4.png);
+}
+
+ul {
+    margin: 10px 0px 0px;
+    padding: 0px 0px 50px 50px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    height: 450px;
+    overflow-y: scroll;
+    background-color: rgba(255, 248, 248, 0.7);
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 10px 15px 2px rgba(59, 57, 57, 0.7);
+    
+}
+
+li{
+    width: 300px;
+    margin: 40px 40px 0px 0px;
+    text-align: center;
+    height: 170px;
+    background-color: whitesmoke;
+    cursor: crosshair;
+}
+
+li:hover{
+    background-color: lightskyblue;
+    transform: scale(1.1,1.1);
+    transition: .5s;
+    box-shadow: 10px 10px darkgray;
+    background-image: linear-gradient(rgba(255,255,255,1), rgb(246, 110, 110));
+}
+li h5{
+    color: white;
+    background-color:darkslategray;
+    font-family: 'Unkempt', cursive;
+    text-transform: uppercase;
+}
+
+li p{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+li:hover h5{
+    font-size: 25px
+}
+
+.container>div:first-child{
+    padding-left: 10px;
+    font-size:1cm;
+    /* margin-top: 100px; */
+    position: relative;
+    box-shadow: 10px 15px 2px rgba(59, 57, 57, 0.7);
+}
+
+#logOut{
+    font-size: 15px;
+    color: white;
+    padding: 5px 10px;
+    float: right;
+    margin: 10px 10px 0px 0px;
+    border-radius: 7px;
+    border-color: #e46774;
+    background-color: #dc3545;
+    cursor: pointer;
+}
+
+#logOut:focus{
+    outline: none;
+}
+
+#logOut:hover{
+    background-color: rgba(216, 72, 72, 0.767);
+}
+
+ul::-webkit-scrollbar{
+    width: 8px;
+    /* height: 20px; */
+    background-color: lightslategray;
+}
+
+ul::-webkit-scrollbar-thumb{
+    background-color: goldenrod;
+}
+
+.container>div:first-child{
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 20px 20px 0px 0px;
+    color: whitesmoke;
+    background-color: #343a40;
+}
+
+.container>div:first-child span{
+    font-size: 38px;
+    margin-left: 10px;
+    color: rgb(67, 173, 67);
+}
+
+.container>div:nth-child(2) h2{
+    font-family: 'Averia Libre', cursive;
+    margin-top: 20px;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(248, 244, 6);
+    background-color: rgba(48, 49, 48, 0.5);
+    background-color: rgba(53, 45, 78, 0.8);
+    box-shadow: 10px 15px 2px rgba(59, 57, 57, 0.7);
+}
+
+
+#qcrud{
+    font-size: 18px;
+    color: black;
+    padding: 5px 10px;
+    /* float: right; */
+    margin: 40px 10px 0px 0px;
+    border-radius: 7px;
+    border-color: #eccc6c;
+    background-color: #ffc107;
+    cursor: pointer;
+}
+
+#qcrud:focus{
+    outline: none;
+}
+
+#qcrud:hover{
+    border-width: 2px;
+    background-color: rgb(211, 158, 1);
+}
+
+.container{
+    animation: slide 1s  0s 1 forwards;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}

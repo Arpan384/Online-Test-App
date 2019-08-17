@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teacher Portal</title>
+    <link rel="shortcut icon" href="https://www.aspitio.com/wp-content/uploads/2018/03/teacher-1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet"> <!--get universal fonts from google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Aldrich|Alfa+Slab+One|Architects+Daughter|Averia+Libre|Chewy|Metal+Mania|Quando|Special+Elite|Unkempt|Zilla+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> <!--get inbuilt bootstrap features using predefined classes from getbootstrap -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> <!--icon font from font awesome-->
+    <link rel="stylesheet" href="../css/design.css">
+    <link rel="stylesheet" href="../css/tportal.css">
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+    <script src="../js/utils/database.js"></script>
+    <script src="../js/controllers/tportal.js"></script>
+</head>
+<body>
+<div class="container">
+    <div>Logged In as : <span id="user"></span><button id="logOut">Log Out</button></div>
+    <div>
+        <h2>Your Tests :</h2>
+        <ul id="tests" ></ul>
+    </div>
+    <button id="qcrud">Create/Update Test</button>
+    
+</div>
+</body>
+</html>

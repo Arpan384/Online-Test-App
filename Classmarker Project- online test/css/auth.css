@@ -1,0 +1,77 @@
+body {
+    background-image:url(../../css/bg3.png);
+}
+
+#main{
+    margin-top: 10px;
+    border-radius: 100px 0px 100px 20px;
+    overflow: hidden;
+   
+    animation:  slide  1s   1 forwards;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(-100%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(0%);
+        box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+#main .section-1{
+    width: 500%;
+    height: 650px;
+    overflow: hidden;
+
+}
+
+#main .section-2{
+    /* width: 20%; */
+    margin-top: 0px;
+    line-height: 50px;
+}
+#slider {
+    height: 680px;
+    background-color: #000;
+    background-image: url("https://i1.wp.com/www.success.com/wp-content/uploads/legacy/sites/default/files/15_1.jpg");
+    background-size: 100% 100%;
+    animation: slider 40s infinite linear;
+    margin-left: -15px;
+    width: 104%;
+    /* border: 1px solid red; */
+}
+
+@keyframes slider {
+    0%,
+    16% {
+        background-image: url("https://i1.wp.com/www.success.com/wp-content/uploads/legacy/sites/default/files/15_1.jpg");
+    }
+    20%,
+    36% {
+        background-image: url("https://i.pinimg.com/736x/e6/25/4c/e6254cdefa5c720d415660d7894a6b58.jpg");
+    }
+    40%,
+    56% {
+        background-image: url("https://s4.scoopwhoop.com/anj/l/85c1dd12-66c2-4b3d-9660-37483eed5222.jpg");
+    }
+    60%,
+    76% {
+        background-image: url("http://inspirationallovequotesimages.com/wp-content/uploads/2019/05/quote-for-students-success-motivational-quotes-for-students-success-quotes-pinterest-1024x576.jpg");
+    }
+    80%,
+    96% {
+        background-image: url("https://www.thoughtco.com/thmb/rDuj_svxqWvLzn1Q2cyaxJfbjxs=/1280x720/filters:no_upscale():max_bytes(150000):strip_icc()/Edison_Quote-56a946555f9b58b7d0f9d7c5.JPG");
+    }
+    100% {
+        background-image: url("https://i1.wp.com/www.success.com/wp-content/uploads/legacy/sites/default/files/15_1.jpg");
+    }
+}
+
+input{
+    font-family: 'Special Elite', cursive;
+}
