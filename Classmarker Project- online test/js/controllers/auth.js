@@ -17,7 +17,7 @@ function login(){
                                                                 return;}
     var username=document.querySelector("#lid").value;
     var password=document.querySelector("#lpswd").value;
-    console.log(username,":id ",password," :pswd");
+    // console.log(username,":id ",password," :pswd");
     //check
     if(username.trim().length==0||password.trim().length==0){alert("Invalid"); return;}
     if(users==null||users[username]==null){alert("Username not found");return;}
@@ -42,7 +42,7 @@ function register(){
 
     if(username.trim().length==0||password.trim().length==0||userType==undefined){alert("Invalid"); return;}
     if(password===cpassword){ id=username; pswd=password;
-    console.log("user: ",userType);
+    // console.log("user: ",userType);
     for(let key in users){
         if(key==id){alert("Username already taken"); return;}
     }
